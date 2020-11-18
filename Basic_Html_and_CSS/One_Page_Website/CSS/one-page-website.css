@@ -1,0 +1,13 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+#contact input {
+    width: 25%;
+    padding: 8px 20px;
+    margin: 5px 0;
+    border: 1px double red;
+    border-radius: 5px;
+}
+
