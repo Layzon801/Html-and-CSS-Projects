@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+body img {
+    border: 2px dashed red;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+}
