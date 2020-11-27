@@ -1,0 +1,60 @@
+body {
+    background-color: grey;
+}
+
+#husky {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+    filter: contrast(175%);
+    border-radius: 5%;
+    padding-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+table {
+    border: .3em double black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: azure;
+}
+
+th, td {
+    padding: 5px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 470px;
+}
+
+.navbar {
+    background-color: black;
+    display: block;
+}
+
+.navbar:hover {
+    cursor: pointer;
+    color:red;
+}
+
+a {
+    color: red;
+
+}
