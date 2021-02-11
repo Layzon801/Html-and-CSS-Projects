@@ -27,9 +27,65 @@
 		<section>
 			<div id="gallery">
 				<h1>GALLERY</h1>
-				<img src="./OnePageWebsiteImages/Rayquaza.png" width="300" height="300" alt="Rayquaza">
-				<img src="./OnePageWebsiteImages/Giratina.png" width="300" height="300" alt="Giratina">
-				<img src="./OnePageWebsiteImages/Victini.png" width="300" height="300" alt="Victini">
+
+				<!-- Images -->
+				<div class="row">
+					<div class="column">
+						<img src="./OnePageWebsiteImages/Rayquaza.png" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Rayquaza">
+					</div>
+					<div class="column">
+						<img src="./OnePageWebsiteImages/Giratina.png" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Giratina">
+					</div>
+					<div class="column">
+						<img src="./OnePageWebsiteImages/Victini.png" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Victini">
+					</div>
+				</div>
+
+				<!-- Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="OnePageWebsiteImages/Rayquaza.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="OnePageWebsiteImages/Giratina.png" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="OnePageWebsiteImages/Victini.png" style="width:100%">
+						</div>
+
+						<!-- Next/Previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<!-- Caption Text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo" src="OnePageWebsiteImages/Rayquaza.png" onclick="currentSlide(1)" alt="Rayquaza">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="OnePageWebsiteImages/Giratina.png" onclick="currentSlide(2)" alt="Giratina">
+						</div>
+
+						<div class="column">
+							<img class="demo" src="OnePageWebsiteImages/Victini.png" onclick="currentSlide(3)" alt="Victini">
+						</div>
+
+
+					</div>
+				</div>
 			</div>
 		</section>
 		<!--END GALLERY-->
@@ -58,6 +114,7 @@
 		<!--END CONTACT-->
 		
 		<br>
-		<footer>&copy;2020 LayzonCorp
+		<footer>&copy;2020 LayzonCorp</footer>
+		<script src="JS/One_Page_Website.js"></script>
 	</body>
 </html>
